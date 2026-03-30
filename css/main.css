@@ -1,0 +1,109 @@
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+#drop-zone-con {
+   margin-top: 40px;
+}
+
+.target-zone {
+   border: dashed 2px black;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+#drag-con {
+   margin-top: 100px;
+}
+
+.drag-item {
+   height: 100px;
+   border: 1px solid #333;
+}
+
+.drag-item:hover {
+   cursor: grab;
+}
+
+.drag-item:active {
+   cursor: grabbing;
+}
+
+.emoji {
+   text-align: center;
+   font-size: 60px;
+   display: flex;
+   justify-content: center;
+}
+
+
+/* -- Header -- */
+
+#main-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+#main-nav li {
+    display: inline-block;
+}
+
+#main-nav li a {
+    display: block;
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+
+/* LightBox rules */
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.85);
+    color: #fff;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 95vw;
+    transition: all .5s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: red;
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 45%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+    
+.lightbox p {
+
+    line-height: 26px;
+}
