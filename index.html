@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Music Mixer</title>
 </head>
 <body>
-    
+    <h1 class="hidden">Music Mixer</h1>
+    <header class="grid-con center-grid-con">
+        <div class="box m-col-start-1 m-col-end-3">Music Mixer</div>
+        <nav id="main-nav" class=" box m-col-start-3 m-col-end-13">
+            <h2 class="hidden">Main Nav</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#lightbox1">How to play</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="grid-con center-grid-con" id="drop-zone-con">
+            <h2 class="hidden">Drop Zones</h2>
+            <div class="col-span-2">
+                <div class="target-zone">
+
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="target-zone">
+
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="target-zone">
+
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="target-zone">
+
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="target-zone">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-con center-grid-con" id="drag-con">
+            <div class="col-span-2">
+                <div class="drag-item" draggable="true" data-animal="monkey">
+                    <span class="emoji">🐵</span>
+                </div>
+            </div>
+
+            <div class="col-span-2">
+                <div class="drag-item" draggable="true" data-animal="lion">
+                    <span class="emoji">🦁</span>
+                </div>
+            </div>
+
+            <div class="col-span-2">
+                <div class="drag-item" draggable="true" data-animal="tiger">
+                    <span class="emoji">🐯</span>
+                </div>
+            </div>
+
+            <div class="col-span-2">
+                <div class="drag-item" draggable="true" data-animal="frog">
+                    <span class="emoji">🐸</span>
+                </div>
+            </div>
+
+            <div class="col-span-2">
+                <div class="drag-item" draggable="true" data-animal="pig">
+                    <span class="emoji">🐷</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="audio-controls">
+            <h2 class="hidden">Audio Control</h2>
+            <button id="playButton">PLAY</button>
+            <button id="pauseButton">PAUSE</button>
+            <button id="rewindButton">REWIND</button>
+
+            <input id="volumeControl" type="range" min="0" max="100" step="1">
+
+        </section>
+
+        <audio id="audio_monkey" src="audios/monkey-sound-1.mp3"></audio>
+        <audio id="audio_lion" src="audios/"></audio>
+        <audio id="audio_tiger" src="audios/"></audio>
+        <audio id="audio_frog" src="audios/"></audio>
+        <audio id="audio_pig" src="audios/"></audio>
+
+        <div class="lightbox" id="lightbox1">
+        <a href="" class="lightbox-close">x</a>
+            <section>
+                <h2 class="lb-heading">How to Play</h2>
+                <p class="lb-text">Choose your favorite animal an drag it to the stage, as soon as you drop it to the drop zone, it starts singing</p>
+                <p>Create your band by mixing diferente aniamls, and use the play, pause, and stop buttons to take control.</p>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
